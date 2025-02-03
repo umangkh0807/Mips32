@@ -1,2 +1,2 @@
 # Mips32
-This is the Mips 32 Implementation of verilog.
+This is the implementation of Mips 32 using Verilog.

@@ -1,4 +1,4 @@
-module program_counter(input clk,rst,branch,jump,
+module program_counter(input clk,rst,
                        input [31:0] nxt_inst,
                        output reg [31:0] instr);
     always @(posedge clk) begin
@@ -6,12 +6,7 @@ module program_counter(input clk,rst,branch,jump,
             instr<=0;
         end
         else begin
-            if(branch||jump)begin
-                instr<=nxt_inst;
-            end
-            else begin
-                instr<=instr+4;
-            end
+            instr<=nxt_instr;
         end
     end
 endmodule

@@ -6,7 +6,7 @@ module program_counter(input clk,rst,
             instr<=0;
         end
         else begin
-            instr<=nxt_instr;
+            instr<=nxt_inst;
         end
     end
 endmodule
